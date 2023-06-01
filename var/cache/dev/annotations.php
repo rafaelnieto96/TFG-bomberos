@@ -62,9 +62,11 @@ return [[
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 1,
-'App%5CController%5CHomepageController' => 0,
+'App%5CController%5CHomepageController' => 2,
 '[C]App%5CController%5CHomepageController' => 1,
-'App%5CController%5CHomepageController%23index' => 2,
+'App%5CController%5CHomepageController%23__construct' => 0,
+'[C]App%5CController%5CHomepageController%23__construct' => 1,
+'App%5CController%5CHomepageController%23index' => 3,
 '[C]App%5CController%5CHomepageController%23index' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController' => 1,
@@ -96,7 +98,7 @@ return [[
 ], [
 
 0 => [],
-1 => 1685543018,
+1 => 1685544280,
 2 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [
@@ -106,10 +108,32 @@ return [[
         [
             'Symfony\\Component\\Routing\\Annotation\\Route' => [
                 'path' => [
-                    '/homepage',
+                    '',
                 ],
                 'name' => [
-                    'app_homepage',
+                    'homepage_',
+                ],
+            ],
+        ],
+        [
+            $o[0],
+        ],
+        []
+    );
+},
+3 => static function () {
+    return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+        $o = [
+            clone (\Symfony\Component\VarExporter\Internal\Registry::$prototypes['Symfony\\Component\\Routing\\Annotation\\Route'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Symfony\\Component\\Routing\\Annotation\\Route')),
+        ],
+        null,
+        [
+            'Symfony\\Component\\Routing\\Annotation\\Route' => [
+                'path' => [
+                    '/',
+                ],
+                'name' => [
+                    'index',
                 ],
             ],
         ],

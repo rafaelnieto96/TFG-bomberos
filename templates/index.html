@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firefighter Theme</title>
+    <style>
+        /* Add any additional styling you want for the menu here */
+        /* For simplicity, I'll use some basic styling */
+body {
+	width: 100vw;
+	/* ToDo: It may cause problems in the future */
+	/* height: 100vh; */
+	font-family: poppins, sans-serif;
+	font-size: 0.88rem;
+	background: var(--color-background);
+	user-select: none;
+	overflow-x: hidden;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: blue;
+}
+        /* Top menu style */
+        .top-menu {
+            background-color: #912d2d;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        /* Logo style */
+        .logo {
+            font-size: 24px;
+        }
+
+        /* Navigation links style */
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            width: 40%;
+        }
+
+        /* Individual navigation link style */
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px; /* Adjust the font size as desired */
+            margin-right: 40px; /* Adjust the margin as desired */
+        }
+        .hero-section {
+            position: relative;
+            height: 800px; /* Adjust the height as desired */
+            background-image: url("images/firestation.png"); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-text {
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtext {
+            font-size: 24px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-menu">
+        <div class="logo">Your Logo</div>
+        <div class="nav-links">
+            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="#">Link 3</a>
+            <a class="nav-link" href="#">Link 4</a>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="hero-text">SAVE PEOPLE LIVES</div>
+        <div class="hero-subtext">
+            REACT Fire-Rescue Department
+            <br>
+            Firefighters are essential to the safety and security of our local communities
+        </div>
+    </div>
+    <!-- Rest of your HTML content goes here -->
+
+</body>
+</html>

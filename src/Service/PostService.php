@@ -5,7 +5,7 @@ namespace App\Service;
 use Symfony\Component\HttpClient\HttpClient;
 use Exception;
 
-class EventService
+class PostService
 {
     private $apiUrl;
     private $httpClient;
