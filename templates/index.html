@@ -1,227 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firefighter Theme</title>
     <style>
-      /* Add any additional styling you want for the menu here */
-      /* For simplicity, I'll use some basic styling */
-      body {
-        /* background-image: url("images/firefighter.png"); */
+        /* Add any additional styling you want for the menu here */
+        /* For simplicity, I'll use some basic styling */
+        body {
+            /* background-image: url("images/firefighter.png"); */
 
-        width: 100vw;
-        /* ToDo: It may cause problems in the future */
-        /* height: 100vh; */
-        font-family: poppins, sans-serif;
-        font-size: 0.88rem;
-        user-select: none;
-        overflow-x: hidden;
-        margin: 0;
-        box-sizing: border-box;
-        /* background-color: blue; */
-      }
+            width: 100vw;
+            /* ToDo: It may cause problems in the future */
+            /* height: 100vh; */
+            font-family: poppins, sans-serif;
+            font-size: 0.88rem;
+            user-select: none;
+            overflow-x: hidden;
+            margin: 0;
+            box-sizing: border-box;
+            /* background-color: blue; */
+        }
 
-      /* Top menu style */
-      .top-menu {
-        height: 50px;
-        background-color: #912d2d;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-      }
+        /* Top menu style */
+        .top-menu {
+            height: 50px;
+            background-color: #912d2d;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
 
-      /* Logo style */
-      .logo {
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
+        /* Logo style */
+        .logo {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
 
-      .logo img {
-        height: 40px;
-      }
+        .logo img {
+            height: 40px;
+        }
 
-      /* Navigation links style */
-      .nav-links {
-        display: flex;
-        gap: 1rem;
-        width: 40%;
-      }
+        /* Navigation links style */
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            width: 40%;
+        }
 
-      /* Individual navigation link style */
-      .nav-link {
-        color: #fff;
-        text-decoration: none;
-        font-size: 20px;
-        /* Adjust the font size as desired */
-        margin-right: 40px;
-        /* Adjust the margin as desired */
-      }
+        /* Individual navigation link style */
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            /* Adjust the font size as desired */
+            margin-right: 40px;
+            /* Adjust the margin as desired */
+        }
 
-      /* Hero section style */
-      .hero-section {
-        position: relative;
-        height: 940px;
-        /* Adjust the height as desired */
-        background-image: url("images/firefighter.png");
-        /* Replace with your image path */
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        /* Set the background image as fixed */
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
+        /* Hero section style */
+        .hero-section {
+            position: relative;
+            height: 940px;
+            /* Adjust the height as desired */
+            background-image: url("images/firefighter.png");
+            /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* Set the background image as fixed */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-      .hero-text {
-        font-size: 36px;
-        line-height: 1.2;
-        margin-bottom: 20px;
-      }
+        .hero-text {
+            font-size: 36px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
 
-      #hero-title {
-        color: #e9bb4d;
-      }
+        #hero-title {
+            color: #e9bb4d;
+        }
 
-      .hero-subtext {
-        font-size: 24px;
-        line-height: 1.4;
-      }
+        .hero-subtext {
+            font-size: 24px;
+            line-height: 1.4;
+        }
 
-      /* News section style */
-      .news-section {
-        margin: 40px;
-      }
+        /* News section style */
+        .news-section {
+            margin: 40px;
+        }
 
-      .news-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* Adjust the number of columns as needed */
-        grid-gap: 20px;
-        /* Adjust the gap between items as needed */
-      }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* Adjust the number of columns as needed */
+            grid-gap: 20px;
+            /* Adjust the gap between items as needed */
+        }
 
-      .news-item {
-        background-color: #f2f2f2;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        height: 300px;
+        .news-item {
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            height: 300px;
 
-        /* background: var(--color-white); */
-        border-radius: 0.3rem;
-        padding: 1.8rem;
-        text-align: center;
-        transition: all 0.3s ease;
-      }
+            /* background: var(--color-white); */
+            border-radius: 0.3rem;
+            padding: 1.8rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
 
-      .news-item:hover {
-        box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
-      }
+        .news-item:hover {
+            box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+        }
 
-      .news-item img {
-        width: 300px;
-        /* Adjust the image width as needed */
-        height: 300px;
-        /* Adjust the image height as needed */
-        object-fit: cover;
-        /* Cut the overflowing width */
-        margin-right: 20px;
-        /* Adjust the margin as needed */
-      }
+        .news-item img {
+            width: 300px;
+            /* Adjust the image width as needed */
+            height: 300px;
+            /* Adjust the image height as needed */
+            object-fit: cover;
+            /* Cut the overflowing width */
+            margin-right: 20px;
+            /* Adjust the margin as needed */
+        }
 
-      .news-content {
-        /* flex: 1; */
-      }
+        .news-content {
+            /* flex: 1; */
+        }
 
-      .news-content-title {
-        margin-bottom: 20px;
-        font-size: 30px;
-        font-weight: bold;
-        margin-top: 55px;
-        margin-bottom: 25px;
-        text-align: center;
-      }
+        .news-content-title {
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 55px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
 
-      .news-title {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        text-align: center;
-      }
+        .news-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
 
-      .news-subtitle {
-        font-size: 16px;
-        color: #888;
-        /* font-size: 24px; */
-        line-height: 1.4;
-        overflow-wrap: break-word;
-      }
+        .news-subtitle {
+            font-size: 16px;
+            color: #888;
+            /* font-size: 24px; */
+            line-height: 1.4;
+            overflow-wrap: break-word;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="top-menu">
-      <div class="logo">
-        <img src="images/logo-bomberos.png" alt="Logo">
-        Bombers de València
-      </div>
-      <div class="nav-links">
-        <a class="nav-link" href="#">Áreas Operativas</a>
-        <a class="nav-link" href="#">Oposiciones</a>
-        <a class="nav-link" href="#">Contacto</a>
-        <a class="nav-link" href="#">Sede Electrónica</a>
-      </div>
+        <div class="logo">
+            <img src="images/logo-bomberos.png" alt="Logo">
+            Bombers de València
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="#">Áreas Operativas</a>
+            <a class="nav-link" href="#">Oposiciones</a>
+            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#">Sede Electrónica</a>
+        </div>
     </div>
     <div class="hero-section">
-      <div class="hero-text" id="hero-title">SEMPRE AL TEU COSTAT</div>
-      <div class="hero-subtext">
-        Bombers de València
-        <br>
-        Si ens necessites, truca'ns. Arribem a qualsevol comunitat
-      </div>
+        <div class="hero-text" id="hero-title">SEMPRE AL TEU COSTAT</div>
+        <div class="hero-subtext">
+            Bombers de València
+            <br>
+            Si ens necessites, truca'ns. Arribem a qualsevol comunitat
+        </div>
     </div>
     <div class="news-section">
-      <h2 class="news-content-title">Últimas Noticias</h2>
-      <div class="news-grid">
-        <div class="news-item">
-          <img src="images/firestation.png" alt="News Image" class="news-image">
-          <div class="news-content">
-            <h3 class="news-title">News Title</h3>
-            <p class="news-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae tempore illum! Eligendi aperiam consectetur eveniet sunt maxime soluta ea minus.</p>
-          </div>
-        </div>
+        <h2 class="news-content-title">Últimas Noticias</h2>
+        <div class="news-grid">
+            <div class="news-item">
+                <img src="images/firestation.png" alt="News Image" class="news-image">
+                <div class="news-content">
+                    <h3 class="news-title">News Title</h3>
+                    <p class="news-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae
+                        tempore illum! Eligendi aperiam consectetur eveniet sunt maxime soluta ea minus.</p>
+                </div>
+            </div>
 
-        <div class="news-item">
-          <!-- News item content goes here -->
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
         </div>
-        <div class="news-item">
-          <!-- News item content goes here -->
-        </div>
-        <div class="news-item">
-          <!-- News item content goes here -->
-        </div>
-        <div class="news-item">
-          <!-- News item content goes here -->
-        </div>
-        <div class="news-item">
-          <!-- News item content goes here -->
-        </div>
-      </div>
     </div>
 
     <!-- Rest of your HTML content goes here -->
 
-  </body>
+</body>
 
 </html>
