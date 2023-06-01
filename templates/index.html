@@ -1,201 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firefighter Theme</title>
     <style>
-        /* Add any additional styling you want for the menu here */
-        /* For simplicity, I'll use some basic styling */
-        body {
-            width: 100vw;
-            /* ToDo: It may cause problems in the future */
-            /* height: 100vh; */
-            font-family: poppins, sans-serif;
-            font-size: 0.88rem;
-            background: var(--color-background);
-            user-select: none;
-            overflow-x: hidden;
-            margin: 0;
-            box-sizing: border-box;
-            background-color: blue;
-        }
+      /* Add any additional styling you want for the menu here */
+      /* For simplicity, I'll use some basic styling */
+      body {
+        /* background-image: url("images/firefighter.png"); */
 
-        /* Top menu style */
-        .top-menu {
-            background-color: #912d2d;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-        }
+        width: 100vw;
+        /* ToDo: It may cause problems in the future */
+        /* height: 100vh; */
+        font-family: poppins, sans-serif;
+        font-size: 0.88rem;
+        user-select: none;
+        overflow-x: hidden;
+        margin: 0;
+        box-sizing: border-box;
+        /* background-color: blue; */
+      }
 
-        /* Logo style */
-        .logo {
-            font-size: 24px;
-        }
+      /* Top menu style */
+      .top-menu {
+        height: 50px;
+        background-color: #912d2d;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
 
-        /* Navigation links style */
-        .nav-links {
-            display: flex;
-            gap: 10px;
-            width: 40%;
-        }
+      /* Logo style */
+      .logo {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
 
-        /* Individual navigation link style */
-        .nav-link {
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-            /* Adjust the font size as desired */
-            margin-right: 40px;
-            /* Adjust the margin as desired */
-        }
+      .logo img {
+        height: 40px;
+      }
 
-        /* Hero section style */
-        .hero-section {
-            position: relative;
-            height: 800px;
-            /* Adjust the height as desired */
-            background-image: url("images/firestation.png");
-            /* Replace with your image path */
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+      /* Navigation links style */
+      .nav-links {
+        display: flex;
+        gap: 1rem;
+        width: 40%;
+      }
 
-        .hero-text {
-            font-size: 36px;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
+      /* Individual navigation link style */
+      .nav-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        /* Adjust the font size as desired */
+        margin-right: 40px;
+        /* Adjust the margin as desired */
+      }
 
-        .hero-subtext {
-            font-size: 24px;
-            line-height: 1.4;
-        }
+      /* Hero section style */
+      .hero-section {
+        position: relative;
+        height: 940px;
+        /* Adjust the height as desired */
+        background-image: url("images/firefighter.png");
+        /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        /* Set the background image as fixed */
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
 
-        /* News section style */
-        .news-section {
-            margin: 40px;
-        }
+      .hero-text {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+      }
 
-        .news-title {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 20px;
-        }
+      #hero-title {
+        color: #e9bb4d;
+      }
 
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* Adjust the number of columns as needed */
-            grid-gap: 20px;
-            /* Adjust the gap between items as needed */
-        }
+      .hero-subtext {
+        font-size: 24px;
+        line-height: 1.4;
+      }
 
-        .news-item {
-            background-color: #f2f2f2;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            height: 300px;
-        }
+      /* News section style */
+      .news-section {
+        margin: 40px;
+      }
 
-        .news-item img {
-            width: 300px;
-            /* Adjust the image width as needed */
-            height: auto;
-            margin-right: 20px;
-            /* Adjust the margin as needed */
-        }
+      .news-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* Adjust the number of columns as needed */
+        grid-gap: 20px;
+        /* Adjust the gap between items as needed */
+      }
 
-        .news-content {
-            /* flex: 1; */
-        }
+      .news-item {
+        background-color: #f2f2f2;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        height: 300px;
 
-        .news-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+        /* background: var(--color-white); */
+        border-radius: 0.3rem;
+        padding: 1.8rem;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
 
-        .news-subtitle {
-            font-size: 16px;
-            color: #888;
-            /* font-size: 24px; */
-            line-height: 1.4;
-            overflow-wrap: break-word;
-        }
+      .news-item:hover {
+        box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+      }
+
+      .news-item img {
+        width: 300px;
+        /* Adjust the image width as needed */
+        height: 300px;
+        /* Adjust the image height as needed */
+        object-fit: cover;
+        /* Cut the overflowing width */
+        margin-right: 20px;
+        /* Adjust the margin as needed */
+      }
+
+      .news-content {
+        /* flex: 1; */
+      }
+
+      .news-content-title {
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 55px;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+
+      .news-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .news-subtitle {
+        font-size: 16px;
+        color: #888;
+        /* font-size: 24px; */
+        line-height: 1.4;
+        overflow-wrap: break-word;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="top-menu">
-        <div class="logo">Your Logo</div>
-        <div class="nav-links">
-            <a class="nav-link" href="#">Link 1</a>
-            <a class="nav-link" href="#">Link 2</a>
-            <a class="nav-link" href="#">Link 3</a>
-            <a class="nav-link" href="#">Link 4</a>
-        </div>
+      <div class="logo">
+        <img src="images/logo-bomberos.png" alt="Logo">
+        Bombers de València
+      </div>
+      <div class="nav-links">
+        <a class="nav-link" href="#">Áreas Operativas</a>
+        <a class="nav-link" href="#">Oposiciones</a>
+        <a class="nav-link" href="#">Contacto</a>
+        <a class="nav-link" href="#">Sede Electrónica</a>
+      </div>
     </div>
     <div class="hero-section">
-        <div class="hero-text">SAVE PEOPLE LIVES</div>
-        <div class="hero-subtext">
-            REACT Fire-Rescue Department
-            <br>
-            Firefighters are essential to the safety and security of our local communities
-        </div>
+      <div class="hero-text" id="hero-title">SAVE PEOPLE LIVES</div>
+      <div class="hero-subtext">
+        REACT Fire-Rescue Department
+        <br>
+        Firefighters are essential to the safety and security of our local communities
+      </div>
     </div>
     <div class="news-section">
-        <h2 class="news-title">News</h2>
-        <div class="news-grid">
-            <div class="news-item">
-                <img src="images/firestation.png" alt="News Image" class="news-image">
-                <div class="news-content">
-                    <h3 class="news-title">News Title</h3>
-                    <p class="news-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae
-                        tempore illum! Eligendi aperiam consectetur eveniet sunt maxime soluta ea minus, vel veritatis
-                        placeat reiciendis? Quo, odio molestias placeat iste recusandae deserunt doloribus est voluptate
-                        exercitationem unde, obcaecati quod maxime dicta cupiditate dolor quasi quis voluptatum eveniet
-                        in ipsam ipsa natus ex. Aliquam optio provident eveniet qui ex labore minus doloremque.
-                        Recusandae laudantium rem maxime perferendis unde aspernatur illo. Sint deserunt, velit neque
-                        dignissimos explicabo laudantium dolore praesentium, veritatis beatae nisi voluptas aspernatur
-                        dolorum at, porro ipsam esse animi? Assumenda facere a repellendus. Corrupti tempora accusamus
-                        asperiores dicta ad similique!</p>
-                </div>
-            </div>
-
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
+      <h2 class="news-content-title">Últimas Noticias</h2>
+      <div class="news-grid">
+        <div class="news-item">
+          <img src="images/firestation.png" alt="News Image" class="news-image">
+          <div class="news-content">
+            <h3 class="news-title">News Title</h3>
+            <p class="news-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae tempore illum! Eligendi aperiam consectetur eveniet sunt maxime soluta ea minus.</p>
+          </div>
         </div>
+
+        <div class="news-item">
+          <!-- News item content goes here -->
+        </div>
+        <div class="news-item">
+          <!-- News item content goes here -->
+        </div>
+        <div class="news-item">
+          <!-- News item content goes here -->
+        </div>
+        <div class="news-item">
+          <!-- News item content goes here -->
+        </div>
+        <div class="news-item">
+          <!-- News item content goes here -->
+        </div>
+      </div>
     </div>
 
     <!-- Rest of your HTML content goes here -->
 
-</body>
+  </body>
 
 </html>
