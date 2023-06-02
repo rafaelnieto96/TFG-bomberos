@@ -68,6 +68,8 @@ return [[
 '[C]App%5CController%5CHomepageController%23__construct' => 1,
 'App%5CController%5CHomepageController%23index' => 3,
 '[C]App%5CController%5CHomepageController%23index' => 1,
+'App%5CController%5CHomepageController%24postService' => 0,
+'[C]App%5CController%5CHomepageController%24postService' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CRedirectController%23__construct' => 0,
@@ -98,7 +100,7 @@ return [[
 ], [
 
 0 => [],
-1 => 1685544280,
+1 => 1685717446,
 2 => static function () {
     return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
         $o = [

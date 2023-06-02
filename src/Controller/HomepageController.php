@@ -2,8 +2,7 @@
 
 namespace App\Controller;
 
-// use App\Service\PostService;
-use App\Form\EventType;
+use App\Service\PostService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -15,11 +14,10 @@ use Exception;
 */
 class HomepageController extends AbstractController
 {
-    // private $postService;
+    private $postService;
 
-    // public function __construct(PostService $postService) {
-        public function __construct() {
-        // $this->postService = $postService;
+    public function __construct(PostService $postService) {
+        $this->postService = $postService;
     }
 
     /**
@@ -27,11 +25,10 @@ class HomepageController extends AbstractController
      */
     public function index(): Response
     {
-        // $posts = $this->postService->getPostsList();
+        $posts = $this->postService->getPostsList();
 
-        // return $this->render('homepage/index.html.twig', [
-        return $this->render('index.html', [
-            // 'posts' => $posts,
+        return $this->render('homepage/index.html.twig', [
+            'items' => $posts,
         ]);
     }
 }

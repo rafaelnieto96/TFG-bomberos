@@ -1,0 +1,60 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Dashboard Noticias
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<style>
+		body {
+			background-image: url("../../images/firefighter.png");
+		}
+	</style>
+{% endblock %}
+
+{% block bodyContent %}
+
+	<div class="hero-section">
+        <div class="hero-text" id="hero-title">SEMPRE AL TEU COSTAT</div>
+        <div class="hero-subtext">
+            Bombers de València
+            <br>
+            Si ens necessites, cridans. Arribem a qualsevol comunitat
+        </div>
+    </div>
+    <div class="news-section">
+        <h2 class="news-content-title">Últimas Noticias</h2>
+        <div class="news-grid">
+            {% for item in items %}
+                
+            <div class="news-item">
+                <img src="{{ item.image }}" alt="News Image" class="news-image">
+                <div class="news-content">
+                    <h3 class="news-title">{{ item.title }}</h3>
+                    <p class="news-subtitle">{{ subitem.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+            <div class="news-item">
+                <!-- News item content goes here -->
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

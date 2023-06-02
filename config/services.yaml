@@ -24,4 +24,4 @@ services:
     # please note that last definitions always *replace* previous ones
     App\Service\PostService:
         arguments:
-            $apiUrl: '%env(resolve:API_URL)%'
+            $apiUrl: '%env(resolve:BOMBEROS_API_URL)%'

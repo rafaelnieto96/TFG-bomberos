@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '60806ac9899d403c9bed6f60d76dc3cf7325478c',
+        'reference' => 'b9573f79d67286acc3b9f704b2d1dbbb4f4970ec',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '60806ac9899d403c9bed6f60d76dc3cf7325478c',
+            'reference' => 'b9573f79d67286acc3b9f704b2d1dbbb4f4970ec',
             'dev_requirement' => false,
         ),
         'doctrine/annotations' => array(
@@ -147,6 +147,15 @@
             'provided' => array(
                 0 => '1.0|2.0',
             ),
+        ),
+        'symfony/asset' => array(
+            'pretty_version' => 'v5.4.21',
+            'version' => '5.4.21.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../symfony/asset',
+            'aliases' => array(),
+            'reference' => '1504b6773c6b90118f9871e90a67833b5d1dca3c',
+            'dev_requirement' => false,
         ),
         'symfony/cache' => array(
             'pretty_version' => 'v5.4.23',
@@ -494,6 +503,15 @@
             'install_path' => __DIR__ . '/../symfony/var-exporter',
             'aliases' => array(),
             'reference' => 'be74908a6942fdd331554b3cec27ff41b45ccad4',
+            'dev_requirement' => false,
+        ),
+        'symfony/webpack-encore-bundle' => array(
+            'pretty_version' => 'v1.17.1',
+            'version' => '1.17.1.0',
+            'type' => 'symfony-bundle',
+            'install_path' => __DIR__ . '/../symfony/webpack-encore-bundle',
+            'aliases' => array(),
+            'reference' => '7e3b6f69bcfcbb40ecfe83ad7a77e44316d26573',
             'dev_requirement' => false,
         ),
         'symfony/yaml' => array(

@@ -19,65 +19,13 @@ class PostService
         ]);
     }
 
-    public function getEventsList()
+    public function getPostsList()
     {
         try {
-            $response = $this->httpClient->request('GET', $this->apiUrl . '/events');
+            $response = $this->httpClient->request('GET', $this->apiUrl . '/posts');
             $data = $response->toArray();
 
             return $data['hydra:member'];
-        } catch (\Exception $exception) {
-            // throw new Exception($exception->getMessage());
-        }
-    }
-
-    public function getOneEvent($id)
-    {
-        try {
-            $response = $this->httpClient->request('GET', $this->apiUrl . '/events/' . $id);
-            $data = $response->toArray();
-
-            return $data;
-        } catch (\Exception $exception) {
-            // throw new Exception($exception->getMessage());
-        }
-    }
-
-    public function createEvent($data)
-    {
-        try {
-            $response = $this->httpClient->request('POST', $this->apiUrl . '/events', [
-                'json' => $data,
-            ]);
-            $data = $response->toArray();
-
-            return $data;
-        } catch (\Exception $exception) {
-            throw new Exception($exception->getMessage());
-        }
-    }
-
-    public function updateEvent($id, $data)
-    {
-        try {
-            $response = $this->httpClient->request('PUT', $this->apiUrl . '/events/' . $id, [
-                'json' => $data,
-            ]);
-            $data = $response->toArray();
-    
-            return $data;
-        } catch (\Exception $exception) {
-            throw new Exception($exception->getMessage());
-        }
-    }
-
-    public function delete($id)
-    {
-        try {
-            $response = $this->httpClient->request('DELETE', $this->apiUrl . '/events/' . $id);
-            $data = $response->toArray();
-
-            return $data;
         } catch (\Exception $exception) {
             // throw new Exception($exception->getMessage());
         }
