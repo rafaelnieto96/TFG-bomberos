@@ -26,7 +26,7 @@ class HomepageController extends AbstractController
     public function index(): Response
     {
         $posts = $this->postService->getPostsList();
-
+// dd($posts);
         return $this->render('homepage/index.html.twig', [
             'items' => $posts,
         ]);

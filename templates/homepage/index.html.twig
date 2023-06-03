@@ -1,6 +1,6 @@
 {% extends "layout.html.twig" %}
 
-{% block title %}Dashboard Noticias
+{% block title %}Bombers de València
 {% endblock %}
 
 {% block stylesheets %}
@@ -28,10 +28,10 @@
             {% for item in items %}
                 
             <div class="news-item">
-                <img src="{{ item.image }}" alt="News Image" class="news-image">
+                {# <img src="{{ item.image }}" alt="News Image" class="news-image"> #}
                 <div class="news-content">
                     <h3 class="news-title">{{ item.title }}</h3>
-                    <p class="news-subtitle">{{ subitem.title }}</p>
+                    <p class="news-subtitle">{{ item.subtitle }}</p>
                 </div>
             </div>
             {% endfor %}
